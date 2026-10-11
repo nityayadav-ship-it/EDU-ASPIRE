@@ -29,12 +29,13 @@ register?.addEventListener("submit", async (e) => {
     email: email.value.trim(),
     password: password.value,
     options: {
-      data: {
-        username: username.value.trim(),
-        program: program.value.trim(),
-        year: year.value.trim()
-      }
-    }
+  data: {
+    username: document.getElementById("username").value.trim(),
+    program: document.getElementById("program").value.trim(),
+    year: document.getElementById("year").value.trim(),
+    role: document.getElementById("role").value
+  }
+}
   });
 
   if (error) {

@@ -1,9 +1,54 @@
+
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Register — EDU-ASPIRE</title><link rel="stylesheet" href="css/style.css"></head>
-<body><header class="topbar"><a class="brand" href="index.html">EDU-ASPIRE</a></header>
-<main class="auth-wrap"><form id="registerForm" class="form-card"><h1>Create Account</h1>
-<label>Username<input id="username" required></label><label>Email<input id="email" type="email" required></label>
-<label>Program<input id="program" placeholder="e.g. B.Sc. IT" required></label><label>Year<input id="year" placeholder="e.g. Third Year" required></label>
-<label>Password<input id="password" type="password" minlength="6" required></label>
-<button class="btn" type="submit">Register as Student</button><p id="msg" class="message"></p><p>Already registered? <a href="login.html">Login</a></p></form></main>
-<script type="module" src="js/auth.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Register — EDU-ASPIRE</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">EDU-ASPIRE</a>
+  </header>
+
+  <main class="auth-wrap">
+    <form id="registerForm" class="form-card">
+      <h1>Create Account</h1>
+
+      <label>Username
+        <input id="username" required>
+      </label>
+
+      <label>Email
+        <input id="email" type="email" required>
+      </label>
+
+      <label>Program
+        <input id="program" placeholder="e.g. B.Sc. IT" required>
+      </label>
+
+      <label>Year
+        <input id="year" placeholder="e.g. Third Year" required>
+      </label>
+
+      <label>Account Type
+        <select id="role" required>
+          <option value="student">Student</option>
+          <option value="tutor">Tutor</option>
+        </select>
+      </label>
+
+      <label>Password
+        <input id="password" type="password" minlength="6" required>
+      </label>
+
+      <button class="btn" type="submit">Create Account</button>
+      <p id="msg" class="message"></p>
+      <p>Already registered? <a href="login.html">Login</a></p>
+    </form>
+  </main>
+
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>
