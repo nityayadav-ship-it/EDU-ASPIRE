@@ -6,5 +6,27 @@
 <label>Title<input id="title" required></label><label>Program<input id="program" placeholder="B.Sc. IT" required></label><label>Year<input id="year" placeholder="Third Year" required></label>
 <label class="wide">Description<textarea id="description" required></textarea></label><label>Thumbnail<input id="thumb" type="file" accept="image/*"></label>
 <button class="btn" type="submit">Create Course</button></form><p id="msg" class="message"></p></section>
-<section><h2>My Courses</h2><div id="myCourses" class="grid three"></div></section>
+<section><h2>My Courses</h2><div id="myCourses" class="grid three"></div>
+<section class="form-card">
+  <h2>Add Lesson / Chapter</h2>
+  <form id="chapterForm" class="form-grid">
+    <label class="wide">Course
+      <select id="chapterCourse" required>
+        <option value="">Loading courses...</option>
+      </select>
+    </label>
+    <label class="wide">Lesson title
+      <input id="chapterTitle" required>
+    </label>
+    <label class="wide">Lesson content
+      <textarea id="chapterContent" required></textarea>
+    </label>
+    <label class="wide">Video URL (optional)
+      <input id="chapterVideo" type="url" placeholder="https://...">
+    </label>
+    <button class="btn" type="submit">Add Lesson</button>
+  </form>
+  <p id="chapterMsg" class="message" role="status"></p>
+</section>
+</section>
 </main><footer>EDU-ASPIRE Cloud LMS</footer><script type="module" src="js/tutor.js"></script></body></html>
